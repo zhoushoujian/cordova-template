@@ -1,0 +1,10 @@
+{
+    "name": "cordova-template",
+    "version": "1.0.0",
+    "homepage": "./",
+    "author": "shoujian",
+    "license": "MIT",
+    "scripts": {
+        "build": "cd template && cordova prepare && cordova build android --debug"
+    }
+}
