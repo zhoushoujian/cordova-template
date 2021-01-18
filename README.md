@@ -58,6 +58,7 @@ CLASSPATH  .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
 4. 检查安卓开发依赖
 
 ```shell
+cd template
 cordova requirements
 ```
 
@@ -72,25 +73,22 @@ Gradle: installed D:\program\gradle-4.10.3\bin\gradle
 ### 创建android项目  
 
 ```shell
-cd template
 cordova platform add android
-```
-
-### 运行测试版app
-
-```shell
-cd ..
-npm run runAndroid
 ```
 
 ### 打包测试版
 
 ```shell
+cd ..
 npm run build
 ```
 
 如显示类似如下的路径，说明打包成功： ```D:\my_site\github\cordova-template\template\platforms\android\app\build\outputs\apk\debug\app-debug.apk```
 如需打正式包，需要运行签名工具对app进行签名，有兴趣的同学自行百度
+
+### 使用
+
+把你的web静态文件放到template目录下的www目录下，入口文件为index.html
 
 ## webview在app端的应用案例
 
