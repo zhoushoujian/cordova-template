@@ -9,5 +9,13 @@
   },
   "devDependencies": {
     "cordova": "^11.0.0"
+  },
+  "dependencies": {
+    "cordova-android": "^7.1.4"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
   }
 }

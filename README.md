@@ -70,6 +70,24 @@ Gradle: installed D:\program\gradle-4.10.3\bin\gradle
 
 搭建安卓开发环境有些麻烦，如遇到问题，可自行百度解决
 
+### 如遇到打包失败可尝试以下方法
+
+platforms\android\build.gradle
+platforms\android\app\build.gradle
+platforms\android\CordovaLib\build.gradle
+在这三个文件里对应的地方换上,然后重启电脑
+
+```code
+
+jcenter {
+  url "https://maven.aliyun.com/nexus/content/repositories/jcenter"
+}
+maven {
+  url 'https://maven.aliyun.com/repository/google'
+}
+
+```
+
 ### 创建 android 项目
 
 ```shell
